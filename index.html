@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed Mohamed — DevOps Engineer</title>
+<meta name="description" content="Ahmed Mohamed, DevOps Engineer specializing in Docker, Kubernetes, Ansible and CI/CD pipelines.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">&gt;_</span>
+      <span class="brand-name">ahmed<span class="dim">.mohamed</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-small btn-primary nav-cta">Contact me</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow-line"><span class="status-dot"></span>Available for infrastructure work</p>
+        <h1 class="hero-title">
+          Ahmed Mohamed builds the pipeline<br>
+          your deploys run through.
+        </h1>
+        <p class="hero-pitch">
+          DevOps Engineer focused on shipping enterprise applications onto private
+          and cloud servers — reliably, repeatedly, and without 2am surprises.
+          Containers, automation, and infrastructure-as-code are the toolkit.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/201019604735" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:am00301919@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="terminal-card">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="terminal-title">deploy.sh</span>
+          </div>
+          <div class="terminal-body" id="terminalBody"></div>
+        </div>
+        <div class="glow glow-cyan"></div>
+        <div class="glow glow-violet"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="section-heading">
+        <h2>About</h2>
+        <p class="section-lede">
+          A Computer Science background meeting a hands-on infrastructure discipline.
+        </p>
+      </div>
+
+      <div class="about-content">
+        <p>
+          I help companies get applications onto servers and keep them there — reliably
+          accessible, correctly configured, and easy to redeploy. My certifications come
+          through the <strong>Digital Egypt Pioneers Initiative (DEPI)</strong>, where I
+          specialized in infrastructure automation and container orchestration, and I keep
+          building on that foundation with every project.
+        </p>
+        <p>
+          I hold a Bachelor's degree in Computer Science, specializing in Bioinformatics
+          (class of 2022–2026), with a strong grounding in Data Structures, Algorithms,
+          Object-Oriented Programming, and Software Engineering principles — the fundamentals
+          that make the automation side of DevOps click.
+        </p>
+
+        <div class="about-facts">
+          <div class="about-fact">
+            <span class="about-fact-label">Education</span>
+            <span class="about-fact-value">B.Sc. Computer Science — Bioinformatics, 2022–2026</span>
+          </div>
+          <div class="about-fact">
+            <span class="about-fact-label">Certification</span>
+            <span class="about-fact-value">DevOps — Digital Egypt Pioneers Initiative (DEPI)</span>
+          </div>
+          <div class="about-fact">
+            <span class="about-fact-label">Focus</span>
+            <span class="about-fact-value">Container orchestration &amp; infrastructure automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section-alt" id="services">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>Services</h2>
+        <p class="section-lede">Where I plug into your infrastructure.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <i class="fa-solid fa-arrows-spin service-icon"></i>
+          <h3>CI/CD Pipeline Implementation</h3>
+          <p>Automating the build, test, and deploy cycle so code changes ship to
+             environments smoothly and frequently, without manual intervention.</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fa-solid fa-code-branch service-icon"></i>
+          <h3>Infrastructure as Code</h3>
+          <p>Managing and provisioning infrastructure through machine-readable
+             definition files — Ansible, Terraform — instead of manual configuration.</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fa-solid fa-cloud service-icon"></i>
+          <h3>Cloud Infrastructure Management</h3>
+          <p>Designing, setting up, and optimizing scalable, secure environments on
+             AWS, Azure, GCP, or private servers, tailored to what the app needs.</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fa-solid fa-server service-icon"></i>
+          <h3>Server &amp; Container Management</h3>
+          <p>Running Linux systems and containerized workloads day-to-day — from
+             provisioning through monitoring, patching, and scaling.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>Skills</h2>
+        <p class="section-lede">The stack I work in most days.</p>
+      </div>
+
+      <div class="skills-groups">
+        <div class="skills-group">
+          <h3 class="skills-group-title">Containers &amp; Orchestration</h3>
+          <div class="badge-row">
+            <span class="badge">Docker</span>
+            <span class="badge">Kubernetes</span>
+            <span class="badge">Ansible</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Systems</h3>
+          <div class="badge-row">
+            <span class="badge">Linux Administration I</span>
+            <span class="badge">Linux Administration II</span>
+            <span class="badge">Bash</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3 class="skills-group-title">Engineering Foundations</h3>
+          <div class="badge-row">
+            <span class="badge">Data Structures</span>
+            <span class="badge">Algorithms</span>
+            <span class="badge">OOP</span>
+            <span class="badge">Software Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <div class="section-heading">
+        <h2>Projects</h2>
+        <p class="section-lede">Work built through the DEPI program and self-directed practice.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-card-top">
+            <i class="fa-solid fa-diagram-project"></i>
+          </div>
+          <h3>Automated CI/CD Pipeline</h3>
+          <p>End-to-end pipeline that builds, tests, and deploys an application on
+             every push, cutting manual release steps to zero.</p>
+          <div class="tech-badges">
+            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">Bash</span>
+            <span class="tech-badge">GitHub Actions</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <i class="fa-solid fa-dharmachakra"></i>
+          </div>
+          <h3>Kubernetes Cluster Deployment</h3>
+          <p>Multi-node cluster setup with rolling updates and health checks for a
+             containerized web application.</p>
+          <div class="tech-badges">
+            <span class="tech-badge">Kubernetes</span>
+            <span class="tech-badge">Docker</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3>Server Configuration Automation</h3>
+          <p>Ansible playbooks that provision and configure private servers from a
+             clean OS to a fully running application stack.</p>
+          <div class="tech-badges">
+            <span class="tech-badge">Ansible</span>
+            <span class="tech-badge">Linux</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-grid">
+      <div class="section-heading">
+        <h2>Contact</h2>
+        <p class="section-lede">
+          Reach out about deployments, infrastructure, or a project you're planning.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+201019604735">+20 10 1960 4735</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="https://wa.me/201019604735" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:am00301919@gmail.com">am00301919@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="brand-mark">&gt;_</span>
+    <p>&copy; <span id="year"></span> Ahmed Mohamed. Built with intent, deployed with confidence.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
